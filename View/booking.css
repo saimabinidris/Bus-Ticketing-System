@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    background: white;
+    padding: 40px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.seats {
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    gap: 50px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+}
+form{
+    border: 1px solid grey;
+    width: 245px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+label:hover {
+    border-color: grey;
+}
+input[type="checkbox"]:checked + label {
+    background: green;
+    border-color: green;
+    color: white;
+}
+input[type="checkbox"]:disabled + label {
+    background: red;
+    border-color: red;
+    color: white;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    background: grey;
+}
